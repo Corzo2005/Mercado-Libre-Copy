@@ -4,58 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercado-Libre-Fake</title>
-    <link
-      rel="stylesheet"
-      href="styles/general.
-  css"
-    />
-    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="./styles/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   </head>
   <body>
     <nav class="nav-desktop">
       <!--parte de arriba-->
       <div id="arriba">
         <div>
-          <p>logo</p>
+            <img src="images/imgi_91_default.png" alt="">
         </div>
-        <input
-          type="search"
-          name="buscador.desktop"
-          id="buscador-desktop"
-          placeholder="Buscar productos, marcas y mas..."
-        />
+        <div class="caja">
+          <input width="100%"
+            type="search"
+            name="buscador.desktop"
+            id="buscador-desktop"
+            placeholder="Buscar productos, marcas y mas..."
+          />
+          <button></button>
+        </div>
+        
         <div>
-          <p>Tips para comprar como un PRO</p>
+          <img src="images/imgi_92_default.png" alt="">
         </div>
       </div>
       <br />
       <!--parte de abajo-->
       <div id="abajo">
-        <div>
+        <div class="categorias">
           <p>Categorias</p>
         </div>
         <div>
-          <div><p>Historial</p></div>
-          <div><p>Tiendas oficiales</p></div>
-          <div><p>Ofertas</p></div>
-          <div><p>Vender</p></div>
-          <div><p>Ayuda</p></div>
+          <div class="historial"><p>Historial</p></div>
+          <div class="tiendas"><p>Tiendas oficiales</p></div>
+          <div class="ofertas"><p>Ofertas</p></div>
+          <div class="vender"><p>Vender</p></div>
+          <div class="ayuda"><p>Ayuda</p></div>
         </div>
         <div>
-          <div><p>Crea tu cuenta</p></div>
-          <div><p>Ingresa</p></div>
-          <div><p>Mis compras</p></div>
+          <div class="crear-cuenta"><p>Crea tu cuenta</p></div>
+          <div class="ingresar"><p>Ingresa</p></div>
+          <div class="mis-compras"><p>Mis compras</p></div>
         </div>
       </div>
     </nav>
     <nav class="nav-mobile">
       <div id="logo"></div>
-      <input
+      <div class="contenedor-search">
+        <button id="lupa"> 
+          <i class="fa-thin fa-magnifying-glass"></i>
+        </button>
+        <input
         type="search"
         name="buscador.mobile"
         id="buscador-mobile"
-        placeholder="Estoy buscando..."
-      />
+        placeholder="Estoy buscando..."/>
+      </div>
       <div>
         <img
           src="https://icon-icons.com/download-file?file=https%3A%2F%2Fimages.icon-icons.com%2F1875%2FPNG%2F512%2Fhamburgermenu_120234.png&id=120234&pack_or_individual=pack"
@@ -65,39 +69,41 @@
       </div>
     </nav>
     <main>
-      <header>
-        <div class="anuncio">
-          <img
-            src="https://http2.mlstatic.com/D_NQ_937005-MLA107595167317_022026-F.webp"
-            alt="Anuncio de Mercado Libre"
-            width="100%px"
-          />
+      <header class="header-mobile">
+        <div id="contenedor-anuncio">
+          <img class="anuncio" src="https://http2.mlstatic.com/D_NQ_937005-MLA107595167317_022026-F.webp" alt="Anuncio de Mercado Libre">
         </div>
       </header>
-      <!--
-      <section class="seccion">
-        <div id="circulos">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+
+      <header class="header-desktop">
+        <div>
         </div>
-        <div id="titulos">
-          <p>Ofertas</p>
-          <p>Moda</p>
-          <p>Vehiculos</p>
-          <p>Inmuebles</p>
-          <p>Historial</p>
-          <p>Celulares</p>
-          <p>Computacion</p>
-          <p>Hogar</p>
+      </header>
+      
+      <section class="seccion-mobile">
+        <div>
+          <div><img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_ofertas_carousel_mobile.webp" width="50" height="50" alt="Ofertas"></div><p>Ofertas</p>
+        </div>
+        <div>
+          <div> <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/icons/xxhdpi/home_tshirt-53-category.webp" width="50" height="50" alt="Moda"></div><p>Moda</p>
+        </div>
+        <div>
+          <div><img src="https://http2.mlstatic.com/storage/homes-korriban/assets/icons/xxhdpi/home_car-front-new-category.webp" width="50" height="50" alt="Vehiculos"></div><p>Vehiculos</p>
+        </div>
+        <div>
+          <div><img src="https://http2.mlstatic.com/storage/homes-korriban/assets/icons/xxhdpi/home_building-category.webp" width="50" height="50" alt="Inmuebles"></div><p>Inmuebles</p>
+        </div>
+        <div>
+          <div><img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/quick_access/home_row_historial_carousel_mobile.webp" width="50" height="50" alt="Historial"></div><p>Historial</p>
+        </div>
+        <div>
+          <div><img src="https://http2.mlstatic.com/storage/homes-korriban/assets/icons/xxhdpi/home_mobile-button-category.webp" width="50" height="50" alt="Celulares"></div><p>Celulares</p>
+        </div>
+        <div>
+          <div><img src="https://http2.mlstatic.com/storage/homes-korriban/assets/icons/xxhdpi/home_tv-2-category.webp" width="50" height="50"></div><p>Computacion</p>
         </div>
       </section>
-
+<!--
       <section class="seccion2">
         <div>
           <p>TIENDAS OFICIALES</p>
